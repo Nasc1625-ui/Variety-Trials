@@ -4,7 +4,10 @@
 
 # Load necessary libraries
 library(ggplot2)
+# ggplot2 is an R package for creating visualizations. It’s based on the “Grammar of Graphics,” which means you can build plots layer by layer.
+
 library(dplyr)
+# dplyr is an R package for data manipulation. It makes it easier to summarize, filter, and transform datasets before plotting.
 
 # Assign the dataset to a variable for clarity
 # → 'data' points to the same source file
