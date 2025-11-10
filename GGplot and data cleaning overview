@@ -125,8 +125,8 @@ ggplot(summary_stats, aes(Replicate, mean)) +
 8. LINE PLOT (REPLICATE VALUES ACROSS ROWS)
 ------------------------------------------------------------
 ### HOW TO WRITE THIS PLOT SCRIPT
-1. Add a row index to create an x-axis.
-2. Reshape again (wide → long) but keep the row column.
+1. data$row <- 1:nrow(data) -> creates a brand-new column in your dataset called row and fills it with the numbers 1, 2, 3, ..., up to the number of rows in the dataset.
+2. Reshape again (wide → long) but keep the row column. -> We take the three replicate columns (Rep1, Rep2, Rep3), which are in wide format, and turn them into long format while keeping the row numbers we created earlier.
 3. Map:
    x = row
    y = Weight
